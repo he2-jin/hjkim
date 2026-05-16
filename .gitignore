@@ -1,0 +1,40 @@
+# 환경변수 (절대 올리면 안 됨)
+.env
+.env.*
+!.env.example
+
+# 가상환경
+.venv/
+venv/
+env/
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# 빌드/배포
+dist/
+build/
+*.egg-info/
+*.egg
+
+# 테스트/커버리지
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 업로드 파일
+uploads/

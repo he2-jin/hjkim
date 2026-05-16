@@ -1,6 +1,7 @@
 from fastapi import FastAPI, APIRouter
 
 from src.api.auth.auth import router as auth_router
+from src.api.friend.friend import router as friend_router
 
 
 def setup_api_routes(application: FastAPI) -> None:
@@ -13,8 +14,11 @@ def setup_api_routes(application: FastAPI) -> None:
         tags=["auth"],
     )
 
-    # TODO: UC-2 구현 시 추가
-    # api_router.include_router(friend_router, prefix="/friend", tags=["friend"])
+    api_router.include_router(
+        friend_router,
+        prefix="/friend",
+        tags=["friend"],
+    )
 
     # TODO: UC-3 구현 시 추가
     # api_router.include_router(chat_room_router, prefix="/chat", tags=["chat"])

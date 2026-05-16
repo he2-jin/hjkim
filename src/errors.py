@@ -17,6 +17,12 @@ class ErrorCode:
     AUTH_PASSWORD_MISMATCH = ("81012", "현재 비밀번호가 올바르지 않습니다")
     AUTH_ACCOUNT_WITHDRAWN = ("81013", "탈퇴한 계정입니다")
 
+    # Friend 관련 (82xxx)
+    FRIEND_SELF_ADD       = ("82001", "자기 자신을 친구로 추가할 수 없습니다")
+    FRIEND_ALREADY_EXISTS = ("82002", "이미 친구로 등록된 사용자입니다")
+    FRIEND_NOT_FOUND      = ("82003", "친구 관계를 찾을 수 없습니다")
+    FRIEND_USER_NOT_FOUND = ("82004", "해당 사용자를 찾을 수 없습니다")
+
     # Common (90xxx)
     COMMON_NOT_FOUND = ("90001", "요청한 리소스를 찾을 수 없습니다")
     COMMON_FORBIDDEN = ("90002", "접근 권한이 없습니다")
